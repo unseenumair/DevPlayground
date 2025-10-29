@@ -1,0 +1,109 @@
+:root {
+	--bodyBg: black;
+	--textCol: white;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;	
+}
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+	font-family: "Poppins", sans-serif;
+	overflow: hidden;
+	background: var(--bodyBg); 
+	color: var(--textCol);
+	user-select: none;
+}
+
+main {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 5%;
+	flex-direction: column;
+}
+
+/* Main Header Section */
+#head {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 2%;
+	font-size: 1.5rem;
+	letter-spacing: 1px;
+}
+
+#head img {
+	width: 50px;
+	height: 50px;
+}
+
+/* Main Game Cards */
+#cards {
+	width: 100%;
+	padding: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 3%;
+}
+
+#cards div{
+	width: clamp(100px, 7vmax, 200px);
+	height: clamp(300px, 70vmin, 400px);
+	border: 0;
+	border-radius: 50px;
+	background-size: cover;
+	background-position: center;
+	transition: width 0.5s ease 0s;
+	position: relative;
+}
+
+#card1 { background: url("/imgs/cover.webp"); }
+#card2 { background: url("/imgs/dead.webp"); }
+#card3 { background: url("/imgs/gta.webp"); }
+#card4 { background: url("/imgs/payback2.webp"); }
+#card5 { background: url("/imgs/geometry.webp"); }
+
+#cards div:hover {
+	width: clamp(300px, 10vmax, 500px);
+}
+
+#cards div:hover a {
+	width: 80%;
+	left: 10%;
+	bottom: 2%;
+}
+
+#cards a {
+	position: absolute;
+	bottom: 2%;
+	left: calc(50% - 15px);
+	border: 0;
+	border-radius: 50px;
+	width: 30px;
+	height: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: var(--bodyBg);
+	transition: all 0.5s ease 0s;
+}
+
+#cards a:hover {
+	background: linear-gradient(45deg, black, transparent);
+}
+
+#cards svg{
+	fill: var(--textCol);
+	width: 20px;
+	height: 20px;
+}

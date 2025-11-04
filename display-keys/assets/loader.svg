@@ -1,0 +1,19 @@
+<svg width="46" height="60" viewBox="0 0 46 60" xmlns="http://www.w3.org/2000/svg"><defs><style>
+              @keyframes scale_XNRPU {
+                0%, 44.44444444444445%, 100% {
+                  transform: scaleY(1);
+                }
+                22.222222222222225% {
+                  transform: scaleY(3);
+                }
+              }
+              
+              @keyframes fade_XNRPU {
+                0%, 44.44444444444445%, 100% {
+                  opacity: 1;
+                }
+                22.222222222222225% {
+                  opacity: 1;
+                }
+              }
+            </style></defs><rect x="0" y="20" width="6" height="20" fill="royalblue" style="animation-name:scale_XNRPU, fade_XNRPU;animation-duration:1.8s, 1.8s;animation-iteration-count:infinite, infinite;animation-delay:0.00s, 0.00s;animation-timing-function:ease-in-out;transform-origin:3px 30px"></rect><rect x="10" y="20" width="6" height="20" fill="royalblue" style="animation-name:scale_XNRPU, fade_XNRPU;animation-duration:1.8s, 1.8s;animation-iteration-count:infinite, infinite;animation-delay:0.16s, 0.16s;animation-timing-function:ease-in-out;transform-origin:13px 30px"></rect><rect x="20" y="20" width="6" height="20" fill="royalblue" style="animation-name:scale_XNRPU, fade_XNRPU;animation-duration:1.8s, 1.8s;animation-iteration-count:infinite, infinite;animation-delay:0.32s, 0.32s;animation-timing-function:ease-in-out;transform-origin:23px 30px"></rect><rect x="30" y="20" width="6" height="20" fill="royalblue" style="animation-name:scale_XNRPU, fade_XNRPU;animation-duration:1.8s, 1.8s;animation-iteration-count:infinite, infinite;animation-delay:0.48s, 0.48s;animation-timing-function:ease-in-out;transform-origin:33px 30px"></rect><rect x="40" y="20" width="6" height="20" fill="royalblue" style="animation-name:scale_XNRPU, fade_XNRPU;animation-duration:1.8s, 1.8s;animation-iteration-count:infinite, infinite;animation-delay:0.64s, 0.64s;animation-timing-function:ease-in-out;transform-origin:43px 30px"></rect></svg>

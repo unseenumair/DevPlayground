@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Toggle Bulb - On Off</title>
+	<!-- CDN -->
+	<script src="https://code.iconify.design/iconify-icon/3.0.0/iconify-icon.min.js" defer></script>
+	<!-- Favicon -->
+	<link rel="icon" href="https://cdn.jsdelivr.net/gh/unseenumair/assets/icons//css.svg">
+	<!-- CSS -->
+	<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+	<main>
+		<section id="bulbCont">
+			<div id="wire"></div>
+			<iconify-icon id="bulb" icon="ion:bulb"></iconify-icon>
+		</section>
+		<section id="button">
+			<iconify-icon icon="streamline-ultimate:power-button-bold"></iconify-icon>
+			<audio src="/click.mp3" autostart="false" style="display: none;"></audio>
+		</section>
+	</main>
+	<script>
+		document.querySelector("#button").addEventListener("click", ()=>{
+			document.body.classList.toggle("on");
+			document.querySelector("audio").play();
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+:root {
+	--bodyBg: black;
+	--bodyOnBg:radial-gradient(#555, #111);
+	--bulbCol: rgba(255, 255, 255, 0.2);
+	--bulbOnCol: white;
+	--buttonCol: black;
+	--buttonOnCol: red;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+	overflow: hidden; 
+	background: var(--bodyBg);
+	color: white;
+}
+
+body.on {
+	background: var(--bodyOnBg);
+}
+
+#bulbCont {
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+#wire {
+    width: 4px;
+    height: clamp(150px, 70vh, 250px);
+    background: var(--bulbCol);
+    margin-bottom: -7px;
+}
+
+#bulb {
+	transform: rotateX(180deg);
+    color: var(--bulbCol);
+    font-size: 8rem;
+    display: block;
+}
+
+.on #bulb {
+	color: var(--bulbOnCol);
+}
+
+/* Toggle Button */
+
+#button {
+	position: absolute;
+	bottom: 3%;
+	right: 3%;
+	padding: 15px;
+	background: var(--bulbCol);
+	display: flex; 
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	font-size: 3rem;
+	color: var(--buttonCol);
+}
+
+.on #button { 
+	color: var(--buttonOnCol); 
+	background: var(--bulbOnCol);
+}
